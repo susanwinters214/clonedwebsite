@@ -5,94 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloned Website - Code.org </title>
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    <link rel="stylesheet" href="styles.css" />
-
+  <link rel="stylesheet" href="styles.css" />
+<style>
+  #topLinks{padding-top:10px;}
+</style>
 </head>
-<body>
-<div id="headerContainer"> 
-    <div id="headerImg">
-    <div style="flex-grow: 1">
-     <img id="logo" alt="logo" src="images/logo.svg" />
-    </div>
-</div>
-    <div style="flex-grow: 8">
-        <nav style="margin-top:25px;">
-            <ul id="topNavLinks" class="demo">
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Teach</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Stats</a></li>
-            <li><a href="#">Help Us</a></li>
-            <li><a href="#">About</a></li>
-           </ul>    
-        </nav>
-    </div>
-    <div style="flex-grow: 3;">
-        <nav style="margin-top:25px;">
-        <ul id="topNavButtons"  class="demo">
-            <li><a href="#">Create</a></li>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">?</a></li>
-        </ul>      
-        </nav>  
-    </div>
 
+  <div class="topnav">
+    <a href="#"><img src="images/logo.jpg" alt="logo"  /></a>
+   <p id="topLinks">  </p>
+    <a href="#">Learn</a>
+    <a href="#">Teach</a>
+    <a href="#">Project</a>
+    <a href="#">Stats</a>
+    <a href="#">Help Us</a>
+    <a href="#">About</a>
+
+    <a href="#" class="split">?</a>
+    <a href="#" class="split">Sign In</a>
+    <a href="#" class="split">Create</a>
+
+  </div>
+
+
+<!--jumbotron area-->
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="font-size: 36px;">Learn Computer Science</h1><br />
+  <h2 style="font-size: 32px;">Change the world.</h2><br /><br /><br />
+  <button id="btnDonate" style="font-size: 20px;border:none;padding:15px;">Start Learning </button>
 </div>
-<section id="hero"> 
-    <div id="flexMsgContainer" style="text-align:center;">  
-        <h1>Learn Computer Science<br /><br />Change the world.</h1>
-<br /><br />
-<div id="startButton">Start Learning </div>
-</section>
+<!--end demo-->
+
+ <!--super hero stripe-->
 <section id="stripe">
     <div style="margin-left:20px;padding-top:20px;">
-    <h2>Help students become superheros!</h2>
-    <p>Our Professional Learning program helps you teach computer science!</p>
-    <div style="float:right; width:150px; border-radius: 10px;
-    height:30px; background-color:white; margin-top:-50px;
-    color: black;margin-right:25px;">
-       <span style="font-weight:bold; margin-left:15px; ">Learn more</span> 
+    <p style="font-size:26px;padding-bottom:8px;">Help students become superheros!</p>
+    <p>Our Professional Learning program helps you teach computer science!</p><br />
     </div>
-</div>
+    <div>
+      <br /> <!--button id="learnMore" style="width:150px;font-size: 16px;height:50px; margin-left:25px;margin-bottom:15px; ">Learn More</!--button--> <br />
+  </div>
 </section>
+
+<p style="text-align:center; margin-top:20px;margin-bottom:20px; padding-bottom:10px;width:100%;">
+  Every student in every school should have the opportunity to learn computer science</p>
+
 <section id="numberContainer">
-<p style="text-align:center; margin-top:20px;width:100%;">Every student in every school should have the opportunity to learn computer science</p>
-   <div id="numWrap" style="position:absolute; margin-top:50px;text-align:center;">
-      <div class="numUnit">
-      <h2>67M</h2>
-      students on Code.org
-    </div>
-  
-
-      <div class="numUnit">
-        <h2>30M</h2>
-        students on Code.org
-      </div>
-
-      <div class="numUnit">
-        <h2>207M</h2>
-        students on Code.org
-      </div>
-
-      <div class="numUnit">
-        <h2>67M</h2>
-        students on Code.org
-      </div>
-
-      <div class="numUnit">
-        <h2>50</h2>
-        students on Code.org
-      </div>
-
-</div>
-   </div>
+    <div><h2 class="num">67M</h2>    </div> 
+    <div><h2 class="num">30M</h2>    </div>
+    <div><h2 class="num">207M</h2>     </div>
+    <div><h2 class="num">67M</h2>    </div>
+    <div><h2 class="num">50</h2>    </div>
 </section>
+<div style="clear:both;"></div>
+
 <section id="coloredCards">
    <div class="coloredBox" id="card1">
-    <img src="images/card1.jpg" alt="Learn at Home"  style="width:100%" /><br />
+    <img src="images/card1.jpg" alt="Students"   style="width:100%"/><br />
+ <br />
+
     Learn at Home<br />
     These resources make it easy.<br /><br />
   
@@ -133,10 +107,14 @@ Support diversity in computing<br /><br />
    </div>
 </section>
 <div style="clear:both;"></div>
+
+
 <section class="bar">
     <div class="orange">Over 207 million Code.org projects created</div>
 </section>
-<section id="twelveBoxes">
+<div style="clear:both;"></div>
+
+<section id="twelveBoxes" style="background-color:white">
   <div><img src="images/box1.jpg" alt="img" /></div>
   <div><img src="images/box2.jpg" alt="img" /></div>
   <div><img src="images/box3.jpg" alt="img" /></div>
@@ -150,22 +128,26 @@ Support diversity in computing<br /><br />
   <div><img src="images/box11.jpg" alt="img" /></div>
   <div><img src="images/box12.jpg" alt="img" /></div>
 </section>
+<div style="clear:both;"></div>
 
-<section id="thanks">
-    <div style="text-align:center; margin-top:30px">
-        <h2>Code.org thanks</h2><br />
+
+    <div style="position:relative; margin-top:50px;background-color:white;height:100px;text-align:center;padding-top:10px; width:100%" >
+        <h2 style="font-family: 'Gotham 4r', sans-serif; font-size: 24px; ">Code.org thanks</h2><br />
        <p> 
         Amazon • The Ballmer Group • Coinbase • Google.org • Charlie Lee • Microsoft • Spiegel Family Fund • Vista Equity Partners<br />
        </p> 
-</section>
-
-
-<section class="donate">
+       <section class="donate">
         <div>Donate</div>
     </section>
-    
+
+    </div>
+
+<div style="clear:both;"></div>
+
  
-  <section id="footerContainer">
+
+
+  <section id="footerContainer" style="margin-top:100px; background-color:#7665a0; padding-top:15px;">
   <div style="flex-grow: 2"></div>
   <div style="flex-grow: 5">
    <p style="font-size:14px;"><span style="color:orange">Privacy Policy</span> 
@@ -189,7 +171,7 @@ Support diversity in computing<br /><br />
   </div>
   <div style="flex-grow: 2"></div>
   </section>
-   
+  <div style="clear:both;"></div>
 
 
 
